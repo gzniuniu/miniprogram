@@ -20,7 +20,7 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>service-hi</module>
+        <module>mini-weather-api-server</module>
         <module>service-ribbon</module>
         <module>service-feign</module>
     </modules>

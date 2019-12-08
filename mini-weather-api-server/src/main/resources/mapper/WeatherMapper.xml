@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
+<mapper namespace="com.chris.mini.weather.api.mapper.WeatherMapper">
+    <!-- find user -->
+    <select id="find" parameterType="String" resultType="com.chris.mini.weather.api.bean.Weather">
+        SELECT * FROM today_weather WHERE city=#{city,jdbcType=VARCHAR}
+    </select>
+
+<!--    <insert id="insert" parameterType="com.chris.mini.weather.api.bean.Weather">-->
+<!--        insert into today_weather-->
+<!--        values(-->
+<!--        #{city,jdbcType=VARCHAR},-->
+<!--        #{mini_date,jdbcType=VARCHAR},-->
+<!--        #{now_weather,jdbcType=VARCHAR},-->
+<!--        #{temperature,jdbcType=VARCHAR}-->
+<!--        )-->
+<!--    </insert>-->
+
+    <insert id="insert">
+    insert into today_weather (city,mini_date,now_weather,temperature)
+    values (#{city},#{mini_date},#{now_weather},#{temperature})
+  </insert>
+
+</mapper>
