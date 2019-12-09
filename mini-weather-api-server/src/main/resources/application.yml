@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: service-weather
+    name: mini-weather-api-server
   datasource:
     username: root
     password: 123456

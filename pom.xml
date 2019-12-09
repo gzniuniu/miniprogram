@@ -19,10 +19,10 @@
     </parent>
 
     <modules>
-        <module>eureka-server</module>
+        <module>mini-weather-eureka-server</module>
         <module>mini-weather-api-server</module>
-        <module>service-ribbon</module>
-        <module>service-feign</module>
+<!--        <module>service-ribbon</module>-->
+        <module>mini-weather-feign</module>
     </modules>
 
     <properties>
