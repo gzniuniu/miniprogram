@@ -12,8 +12,8 @@ public class WeatherController {
     @Autowired
     SchedualServiceWeather schedualServiceWeather;
 
-    @GetMapping(value = "/weather")
-    public String sayHi(@RequestParam String city) {
+    @GetMapping(value = "/feignWeather")
+    public Object sayHi(@RequestParam String city) {
         return schedualServiceWeather.getWeatherFromClientOne( city );
     }
 }

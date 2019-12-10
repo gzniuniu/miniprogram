@@ -7,3 +7,5 @@ server:
 spring:
   application:
     name: mini-weather-service-feign
+
+feign.hystrix.enabled: true
