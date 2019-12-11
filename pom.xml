@@ -23,6 +23,7 @@
         <module>mini-weather-api-server</module>
 <!--        <module>service-ribbon</module>-->
         <module>mini-weather-feign</module>
+        <module>mini-weather-zuul</module>
     </modules>
 
     <properties>
